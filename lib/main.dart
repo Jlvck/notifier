@@ -37,7 +37,8 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     print("building main context");
     return const Scaffold(
-      // body: ValueNotifierClass()
+      // change body property to either SetStateClass or ValueNotifierClass()
+      //to implement setState case study or ValueNotifier case study
       body: ValueNotifierClass(),
     );
   }
