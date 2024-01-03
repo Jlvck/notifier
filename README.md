@@ -1,6 +1,12 @@
 # notifier
+A Case Study of setState & ValueNotifier in management of ephemeral states. 
 
-A new Flutter project.
+
+A Flutter project that descripes the use case of setState and ValueNotifier in management of ephemeral states in flutter.
+The SetStateclass makes use of setState function.
+The ValueNotifierclass makes use of ValueNotifier.  
+
+
 
 ## Getting Started
 
