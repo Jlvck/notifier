@@ -72,8 +72,7 @@ class _ValueNotifierClassState extends State<ValueNotifierClass> {
                   return Text(
                     value ?? "Let's Get Started",
                     textAlign: TextAlign.center,
-                    style: const TextStyle(
-                        fontSize: 50, fontWeight: FontWeight.bold),
+                    style: Theme.of(context).primaryTextTheme.bodyMedium,
                   );
                 }),
             TextButton(

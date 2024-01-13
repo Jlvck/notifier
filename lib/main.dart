@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import './value_notifier.dart';
-import './setState.dart';
+// import './setState.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,9 +15,14 @@ class MyApp extends StatelessWidget {
       title: 'Value Notifier',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
+          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+          useMaterial3: true,
+          scaffoldBackgroundColor: Colors.redAccent,
+          primaryTextTheme: const TextTheme(
+              bodyMedium: TextStyle(
+                  fontSize: 50,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white))),
       home: const MyHomePage(title: 'Value Notifier'),
     );
   }
@@ -37,8 +42,9 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     print("building main context");
     return const Scaffold(
-      // change body property to either SetStateClass or ValueNotifierClass()
+      // change body property to either SetStateClass() or ValueNotifierClass()
       //to implement setState case study or ValueNotifier case study
+      // & appropriate import statement for the interested case study class
       body: ValueNotifierClass(),
     );
   }
